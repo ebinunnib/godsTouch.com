@@ -1,0 +1,161 @@
+/* Navbar Container */
+.custom-navbar {
+  /* background: linear-gradient(135deg, #acd4d4e7, #feb47bc5); */
+  /* background-image: url(https://i.postimg.cc/g28RDTmF/pexels-matthiaszomer-339620.jpg); */
+color: azure;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.158);
+  /* padding: 0.5rem 1rem; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 1030;
+  border-bottom: 1px solid #fcfafa05;
+  
+}
+
+/* Logo and Text Container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imgicon {
+  height: 60px;
+  transition: transform 0.3s ease;
+  margin-right: 10px;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8d0492;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 1.3s ease;
+}
+
+
+
+.icon-container:hover .imgicon {
+  transform: scale(1.3);
+}
+
+.icon-container:hover .iconName {
+  color: #079bf1cc;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  
+  gap: 5rem;
+  font-size: x-large;
+  font-weight: 600;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link-hover {
+  color: #7137ceec;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link-hover:hover {
+font-weight: bold;
+  color: #08d0eb;
+  transform: translateY(3px) scale(1.1);
+}
+
+/* Navbar Toggle (for mobile) */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .iconName {
+    font-size: 1.5rem;
+  }
+
+  .iconName1 {
+    font-size: 1.2rem;
+  }
+
+  .imgicon {
+    height: 50px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .imgicon {
+    height: 40px;
+  }
+
+  .iconName {
+    font-size: 1.3rem;
+  }
+
+  .iconName1 {
+    font-size: 1rem;
+  }
+}
+
+
+/* Logo and Text Container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Align icon and name on the same line */
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: row; /* Ensure items are on the same line */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .icon-title {
+    justify-content: center; /* Center the icon and text */
+  }
+  .iconName {
+    font-size: 1.5rem;
+  }
+  .imgicon {
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-title {
+    flex-direction: row; /* Keep them on the same line */
+    justify-content: center;
+  }
+  .iconName {
+    font-size: 1.3rem;
+  }
+  .imgicon {
+    height: 40px;
+  }
+}
+
+

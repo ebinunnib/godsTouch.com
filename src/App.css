@@ -1,38 +1,49 @@
-.App {
+
+.h1h {
+  font-size: 2.5rem;
+  color: #0f0000; /* Dark red color */
   text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.custom-card {
+  width: 100%; /* Adjust width as needed (e.g., 50%, 600px) */
+  max-width: 1000px; /* Limit the maximum size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-top: 10px; /* Optional spacing */
+
+  margin: 0 auto; /* Center the card within the modal */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgfrnd {
+  width: 100%; /* Make the image fill the card width */
+  max-width: 1000px; /* Limit the maximum size */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-top: 10px; /* Optional spacing */
+}
+.transparent-modal .modal-content {
+  background-color: rgba(0, 0, 0, 0.747); /* Semi-transparent background */
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-card {
+  background: rgba(0, 0, 0, 0.801); /* Transparent background for the card */
+  border-radius: 10px; /* Optional: rounded corners */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-card .card-img {
+  opacity: 5.7; /* Optional: make the image slightly transparent */
 }
 
-.App-link {
-  color: #61dafb;
+.card-img {
+  object-fit: cover; /* Ensure the image fits the container properly */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardtitle{
+  background-color: #0f000000;
 }

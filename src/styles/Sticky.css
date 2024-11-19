@@ -1,0 +1,16 @@
+.sticky-whatsapp {
+    position: fixed;
+    right: 20px; /* Adjust distance from the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align perfectly in the center */
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+  
+  .whatsapp-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    cursor: pointer;
+  }
+  

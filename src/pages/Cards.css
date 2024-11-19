@@ -1,0 +1,26 @@
+.card-container {
+  max-width: 100%; /* Full-width for responsiveness */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  display: flex; /* Flex display for horizontal alignment */
+  scroll-behavior: smooth; /* Smooth scroll */
+  padding-bottom: 10px; /* Extra space at the bottom */
+}
+
+.card-container::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background-color: #023047;
+  border-radius: 5px;
+}
+
+.card-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Card styling */
+.card {
+  min-width: 300px; /* Ensure cards have enough width */
+  margin-right: 20px; /* Space between cards */
+}
